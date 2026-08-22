@@ -1,6 +1,6 @@
 # ══════════════════════════════════════════════════════
 #  CHOTU-NUKE  v1.0.0  --  by chotu
-#  t.me/chotunuke · discord.gg/chotuv2  |  github.com/v0id4real
+#  t.me/chotunuke · discord.gg/chotuv2  |  https://github.com/RosvinOfficial/CHOTU-NUKE/
 # ══════════════════════════════════════════════════════
 
 import os, sys, time, random, asyncio, json, re, webbrowser
@@ -22,9 +22,9 @@ TELEGRAM_URL = "https://t.me/chotunuke"
 TELEGRAM_TAG = "t.me/chotunuke"
 DISCORD_URL  = "https://discord.gg/3fVFAyYSA2"
 DISCORD_TAG  = "discord.gg/3fVFAyYSA2"
-GITHUB_URL   = "https://github.com/v0id4real/Void-Nuke"
+GITHUB_URL   = "https://github.com/RosvinOfficial/CHOTU-NUKE/"
 PUB          = f"||@everyone||  **# RAID BY CHOTU-NUKE**  :  {TELEGRAM_TAG} · {DISCORD_TAG}  <{GITHUB_URL}>"
-PUB_SHORT    = f"{TELEGRAM_TAG} · {DISCORD_TAG} | github.com/v0id4real"
+PUB_SHORT    = f"{TELEGRAM_TAG} · {DISCORD_TAG} | https://github.com/RosvinOfficial/CHOTU-NUKE/"
 RAID_NAME   = "raid-by-chotu"
 TOOL_NAME   = "CHOTU-NUKE"
 
@@ -43,18 +43,18 @@ EMBED_CONFIG = {
         "_ _\n"
         f"**> {TELEGRAM_TAG}**\n"
         f"**> {DISCORD_TAG}**\n"
-        "**> github.com/v0id4real**\n"
+        "**> https://github.com/RosvinOfficial/CHOTU-NUKE/**\n"
         "_ _\n"
         "||@everyone||"
     ),
     "color"      : 0xFF0000,
     "message"    : f"||@everyone||  {PUB}",
     "image"      : "https://media.discordapp.net/attachments/1471977538648674478/1477637266791727155/c51ca65be8fa86b4b8f29a7d15dce335_1.webp",
-    "footer"     : f"{TELEGRAM_TAG} · {DISCORD_TAG}  |  github.com/v0id4real",
+    "footer"     : f"{TELEGRAM_TAG} · {DISCORD_TAG}  |  https://github.com/RosvinOfficial/CHOTU-NUKE/",
     "fields"     : [
         {"name": "\U0001f4f1 __Telegram__", "value": f"**{TELEGRAM_TAG}**", "inline": True},
         {"name": "\U0001f517 __Discord__", "value": f"**{DISCORD_TAG}**", "inline": True},
-        {"name": "\U0001f431 __Github__",  "value": "**github.com/v0id4real**",   "inline": True},
+        {"name": "\U0001f431 __Github__",  "value": "**https://github.com/RosvinOfficial/CHOTU-NUKE/**",   "inline": True},
         {"name": "\u26a1 __Tool__",        "value": "**CHOTU-NUKE v1.0.0**",       "inline": True},
     ],
 }
@@ -154,7 +154,7 @@ def _open_community_links():
 def _open_star_unlock():
     _section("STAR FOR UNLOCK")
     log_warn("star the repo to unlock premium features !")
-    log_info("github.com/v0id4real/Void-Nuke")
+    log_info("https://github.com/RosvinOfficial/CHOTU-NUKE//Void-Nuke")
     try:
         _open_community_links()
         time.sleep(.4)
@@ -547,7 +547,7 @@ async def poll_spam(sid):
             try:
                 poll = discord.Poll(question=question[:300], duration=timedelta(hours=1))
                 poll.add_answer(text=DISCORD_TAG)
-                poll.add_answer(text="github.com/v0id4real")
+                poll.add_answer(text="https://github.com/RosvinOfficial/CHOTU-NUKE/")
                 await chan.send(poll=poll); log_ok(f"#{chan.name} [{i+1}]"); ok += 1
             except Exception as e: log_err(_vis(str(e))); fail += 1
     _summary("Poll Spam", ok, fail, time.perf_counter()-t)
